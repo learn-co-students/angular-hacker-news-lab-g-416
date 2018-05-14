@@ -6,8 +6,6 @@ var Item = {
 	controller: function (PostsService) {
 		var ctrl = this;
 
-		console.log('hey');
-
 		PostsService
 			.getPost(this.id)
 			.then(function (res) {
