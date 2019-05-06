@@ -12,7 +12,7 @@ module.exports = function (config) {
         ],
         exclude: [],
         plugins: [
-            require("karma-chrome-launcher"),
+            require("karma-firefox-launcher"),
             require("karma-jasmine"),
             require("karma-spec-reporter")
         ],
@@ -22,7 +22,7 @@ module.exports = function (config) {
         colors: true,
         logLevel: config.LOG_INFO,
         autoWatch: false,
-        browsers: ['Chrome'],
+        browsers: ['Firefox'],
         singleRun: true,
         concurrency: Infinity
     })
